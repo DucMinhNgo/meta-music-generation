@@ -1,0 +1,6 @@
+[submodule "audio-generation"]
+	path = audio-generation
+	url = https://github.com/DucMinhNgo/audio-generation
+[submodule "voice-generation"]
+	path = voice-generation
+	url = https://github.com/DucMinhNgo/voice-generation
