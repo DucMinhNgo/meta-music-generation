@@ -4,3 +4,6 @@
 [submodule "voice-generation"]
 	path = voice-generation
 	url = https://github.com/DucMinhNgo/voice-generation
+[submodule "frontend-music-generation"]
+	path = frontend-music-generation
+	url = https://github.com/DucMinhNgo/frontend-music-generation
