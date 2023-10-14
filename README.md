@@ -5,6 +5,13 @@ git submodule add https://github.com/DucMinhNgo/frontend-music-generation fronte
 git submodule update --init --recursive git submodule update --recursive --remote 
 git submodule update --init --recursive --remote
 
+# Clone and Install Code
+- Meta repo is module contain three submodules
+git clone https://github.com/DucMinhNgo/meta-music-generation
+    + https://github.com/DucMinhNgo/audio-generation
+    + https://github.com/DucMinhNgo/voice-generation
+    + https://github.com/DucMinhNgo/frontend-music-generation 
+
 # Start Project
 cd voice-generation
 # Create Redis
