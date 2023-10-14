@@ -1,29 +1,20 @@
-git submodule add https://github.com/DucMinhNgo/audio-generation audio-generation
-git submodule add https://github.com/DucMinhNgo/voice-generation voice-generation
-git submodule add https://github.com/DucMinhNgo/frontend-music-generation frontend-music-generation
-
-git submodule update --init --recursive git submodule update --recursive --remote 
-git submodule update --init --recursive --remote
-
 # Clone and Install Code
 git clone https://github.com/DucMinhNgo/meta-music-generation
 
 - Meta repo is module contain three submodules
     + https://github.com/DucMinhNgo/audio-generation
     + https://github.com/DucMinhNgo/voice-generation
-    + https://github.com/DucMinhNgo/frontend-music-generation 
-
-# Start Project
+    + https://github.com/DucMinhNgo/frontend-music-generation
+# Create Redis, Server (Flask), AI (voice generation)
 cd voice-generation
-# Create Redis
 docker-compose up -d
 cd notebooks
-
-# Run AI funtion
+python server.py
 python queue_service.py
 
-# Run Backend Flask (run on port: 5000)
-python server.py
+# Start AI (melody generation)
+cd audio-generation
+python -m demos.queue_melody_service.py
 
 # Run Frontend (run on port: 3000)
 cd frontend-music-generation
