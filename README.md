@@ -6,8 +6,9 @@ git submodule update --init --recursive git submodule update --recursive --remot
 git submodule update --init --recursive --remote
 
 # Clone and Install Code
-- Meta repo is module contain three submodules
 git clone https://github.com/DucMinhNgo/meta-music-generation
+
+- Meta repo is module contain three submodules
     + https://github.com/DucMinhNgo/audio-generation
     + https://github.com/DucMinhNgo/voice-generation
     + https://github.com/DucMinhNgo/frontend-music-generation 
